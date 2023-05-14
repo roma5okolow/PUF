@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun May 14 21:24:16 2023
+# Process ID: 21864
+# Current directory: C:/Projects/FPGA-Systems/PUF/prj/Vivado/PUF/PUF.runs/synth_1
+# Command line: vivado.exe -log arbiter_puf.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arbiter_puf.tcl
+# Log file: C:/Projects/FPGA-Systems/PUF/prj/Vivado/PUF/PUF.runs/synth_1/arbiter_puf.vds
+# Journal file: C:/Projects/FPGA-Systems/PUF/prj/Vivado/PUF/PUF.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source arbiter_puf.tcl -notrace
