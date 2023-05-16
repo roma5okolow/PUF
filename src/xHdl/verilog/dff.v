@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
-`include "parameters.vh"
-
-module dff(
+module dff #(
+    parameter C_DFF_TYPE = "PRIMITIVE"
+    )(
     input id,
     input iclk,
     output reg oq

@@ -1,8 +1,8 @@
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun May 14 21:31:56 2023
-| Host         : DESKTOP-MN7LMCI running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue May 16 23:01:08 2023
+| Host         : bsibgatullin-ThinkPad-E14-Gen-2 running 64-bit Ubuntu 22.04.2 LTS
 | Command      : report_timing_summary -max_paths 10 -file arbiter_puf_timing_summary_routed.rpt -pb arbiter_puf_timing_summary_routed.pb -rpx arbiter_puf_timing_summary_routed.rpx -warn_on_violation
 | Design       : arbiter_puf
 | Device       : 7a35t-csg324
@@ -25,6 +25,7 @@ Timing Summary Report
   Ignore I/O Paths                           :  No
   Timing Early Launch at Borrowing Latches   :  No
   Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
 
   Corner  Analyze    Analyze    
   Name    Max Paths  Min Paths  
@@ -33,26 +34,38 @@ Timing Summary Report
   Fast    Yes        Yes        
 
 
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
 
 check_timing report
 
 Table of Contents
 -----------------
-1. checking no_clock
-2. checking constant_clock
-3. checking pulse_width_clock
-4. checking unconstrained_internal_endpoints
-5. checking no_input_delay
-6. checking no_output_delay
-7. checking multiple_clock
-8. checking generated_clocks
-9. checking loops
-10. checking partial_input_delay
-11. checking partial_output_delay
-12. checking latch_loops
+1. checking no_clock (4)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (1)
+5. checking no_input_delay (4)
+6. checking no_output_delay (1)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
 
-1. checking no_clock
---------------------
+1. checking no_clock (4)
+------------------------
  There is 1 register/latch pin with no clock driven by root clock pin: ichallenge[0] (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: ichallenge[1] (HIGH)
@@ -62,32 +75,32 @@ Table of Contents
  There is 1 register/latch pin with no clock driven by root clock pin: ipulse (HIGH)
 
 
-2. checking constant_clock
---------------------------
+2. checking constant_clock (0)
+------------------------------
  There are 0 register/latch pins with constant_clock.
 
 
-3. checking pulse_width_clock
------------------------------
+3. checking pulse_width_clock (0)
+---------------------------------
  There are 0 register/latch pins which need pulse_width check
 
 
-4. checking unconstrained_internal_endpoints
---------------------------------------------
+4. checking unconstrained_internal_endpoints (1)
+------------------------------------------------
  There is 1 pin that is not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
-5. checking no_input_delay
---------------------------
+5. checking no_input_delay (4)
+------------------------------
  There are 4 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
-6. checking no_output_delay
----------------------------
+6. checking no_output_delay (1)
+-------------------------------
  There is 1 port with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
@@ -95,33 +108,33 @@ Table of Contents
  There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
 
 
-7. checking multiple_clock
---------------------------
+7. checking multiple_clock (0)
+------------------------------
  There are 0 register/latch pins with multiple clocks.
 
 
-8. checking generated_clocks
-----------------------------
+8. checking generated_clocks (0)
+--------------------------------
  There are 0 generated clocks that are not connected to a clock source.
 
 
-9. checking loops
------------------
+9. checking loops (0)
+---------------------
  There are 0 combinational loops in the design.
 
 
-10. checking partial_input_delay
---------------------------------
+10. checking partial_input_delay (0)
+------------------------------------
  There are 0 input ports with partial input delay specified.
 
 
-11. checking partial_output_delay
----------------------------------
+11. checking partial_output_delay (0)
+-------------------------------------
  There are 0 ports with partial output delay specified.
 
 
-12. checking latch_loops
-------------------------
+12. checking latch_loops (0)
+----------------------------
  There are 0 combinational latch loops in the design through latch input
 
 

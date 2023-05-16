@@ -1,8 +1,8 @@
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun May 14 21:31:56 2023
-| Host         : DESKTOP-MN7LMCI running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue May 16 23:01:07 2023
+| Host         : bsibgatullin-ThinkPad-E14-Gen-2 running 64-bit Ubuntu 22.04.2 LTS
 | Command      : report_methodology -file arbiter_puf_methodology_drc_routed.rpt -pb arbiter_puf_methodology_drc_routed.pb -rpx arbiter_puf_methodology_drc_routed.rpx
 | Design       : arbiter_puf
 | Device       : xc7a35tcsg324-1
@@ -20,7 +20,7 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_arbiter_puf
+          Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
              Violations found: 1

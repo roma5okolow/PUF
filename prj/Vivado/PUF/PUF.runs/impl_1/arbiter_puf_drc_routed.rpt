@@ -1,8 +1,8 @@
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun May 14 21:31:55 2023
-| Host         : DESKTOP-MN7LMCI running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue May 16 23:01:07 2023
+| Host         : bsibgatullin-ThinkPad-E14-Gen-2 running 64-bit Ubuntu 22.04.2 LTS
 | Command      : report_drc -file arbiter_puf_drc_routed.rpt -pb arbiter_puf_drc_routed.pb -rpx arbiter_puf_drc_routed.rpx
 | Design       : arbiter_puf
 | Device       : xc7a35tcsg324-1
@@ -20,16 +20,15 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_arbiter_puf
+          Floorplan: design_1
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 5
+             Violations found: 4
 +-------------+------------------+-------------------------------------------------------------+------------+
 | Rule        | Severity         | Description                                                 | Violations |
 +-------------+------------------+-------------------------------------------------------------+------------+
 | NSTD-1      | Critical Warning | Unspecified I/O Standard                                    | 1          |
-| UCIO-1      | Critical Warning | Unconstrained Logical Port                                  | 1          |
 | CFGBVS-1    | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
 | PDRC-153    | Warning          | Gated clock check                                           | 1          |
 | PLHOLDVIO-2 | Warning          | Non-Optimal connections which could lead to hold violations | 1          |
@@ -40,11 +39,6 @@ Table of Contents
 NSTD-1#1 Critical Warning
 Unspecified I/O Standard  
 5 out of 5 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: ichallenge[2:0], ipulse, oresponse.
-Related violations: <none>
-
-UCIO-1#1 Critical Warning
-Unconstrained Logical Port  
-5 out of 5 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: ichallenge[2:0], ipulse, oresponse.
 Related violations: <none>
 
 CFGBVS-1#1 Warning

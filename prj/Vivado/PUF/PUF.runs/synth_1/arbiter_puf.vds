@@ -1,87 +1,116 @@
 #-----------------------------------------------------------
-# Vivado v2019.1 (64-bit)
-# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
-# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun May 14 21:24:16 2023
-# Process ID: 21864
-# Current directory: C:/Projects/FPGA-Systems/PUF/prj/Vivado/PUF/PUF.runs/synth_1
-# Command line: vivado.exe -log arbiter_puf.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arbiter_puf.tcl
-# Log file: C:/Projects/FPGA-Systems/PUF/prj/Vivado/PUF/PUF.runs/synth_1/arbiter_puf.vds
-# Journal file: C:/Projects/FPGA-Systems/PUF/prj/Vivado/PUF/PUF.runs/synth_1\vivado.jou
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue May 16 23:00:14 2023
+# Process ID: 54396
+# Current directory: /home/bsibgatullin/study/PUF/prj/Vivado/PUF/PUF.runs/synth_1
+# Command line: vivado -log arbiter_puf.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source arbiter_puf.tcl
+# Log file: /home/bsibgatullin/study/PUF/prj/Vivado/PUF/PUF.runs/synth_1/arbiter_puf.vds
+# Journal file: /home/bsibgatullin/study/PUF/prj/Vivado/PUF/PUF.runs/synth_1/vivado.jou
+# Running On: bsibgatullin-ThinkPad-E14-Gen-2, OS: Linux, CPU Frequency: 832.352 MHz, CPU Physical cores: 4, Host memory: 33348 MB
 #-----------------------------------------------------------
 source arbiter_puf.tcl -notrace
 Command: synth_design -top arbiter_puf -part xc7a35tcsg324-1 -flatten_hierarchy none
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
-INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13688 
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Projects/FPGA-Systems/PUF/src/xHdl/verilog/parameters.vh:4]
-WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Projects/FPGA-Systems/PUF/src/xHdl/verilog/parameters.vh:7]
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 54416
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/bsibgatullin/Vivado_and_Vitis/Vivado_real/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 473.863 ; gain = 177.527
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1949.391 ; gain = 370.801 ; free physical = 9471 ; free virtual = 53275
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1362.773; parent = 1157.495; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2948.746; parent = 1949.395; children = 999.352
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'arbiter_puf' [C:/Projects/FPGA-Systems/PUF/src/xHdl/verilog/arbiter_puf.v:5]
-INFO: [Synth 8-6157] synthesizing module 'delay_line' [C:/Projects/FPGA-Systems/PUF/src/xHdl/verilog/delay_line.v:5]
-INFO: [Synth 8-5534] Detected attribute (* dont_touch = "yes" *) [C:/Projects/FPGA-Systems/PUF/src/xHdl/verilog/delay_line.v:12]
-INFO: [Synth 8-6157] synthesizing module 'mux' [C:/Projects/FPGA-Systems/PUF/src/xHdl/verilog/mux.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'mux' (1#1) [C:/Projects/FPGA-Systems/PUF/src/xHdl/verilog/mux.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'delay_line' (2#1) [C:/Projects/FPGA-Systems/PUF/src/xHdl/verilog/delay_line.v:5]
-INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Projects/FPGA-Systems/PUF/src/xHdl/verilog/dff.v:5]
-INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+INFO: [Synth 8-6157] synthesizing module 'arbiter_puf' [/home/bsibgatullin/study/PUF/src/xHdl/verilog/arbiter_puf.v:3]
+INFO: [Synth 8-6157] synthesizing module 'delay_line' [/home/bsibgatullin/study/PUF/src/xHdl/verilog/delay_line.v:3]
+	Parameter C_LENGTH bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mux' [/home/bsibgatullin/study/PUF/src/xHdl/verilog/mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [/home/bsibgatullin/study/PUF/src/xHdl/verilog/mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'delay_line' (0#1) [/home/bsibgatullin/study/PUF/src/xHdl/verilog/delay_line.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dff' [/home/bsibgatullin/study/PUF/src/xHdl/verilog/dff.v:3]
+	Parameter C_DFF_TYPE bound to: PRIMITIVE - type: string 
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [/home/bsibgatullin/Vivado_and_Vitis/Vivado_real/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
 	Parameter INIT bound to: 1'b0 
-	Parameter IS_C_INVERTED bound to: 1'b0 
-	Parameter IS_D_INVERTED bound to: 1'b0 
-	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'FDRE' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
-INFO: [Synth 8-6155] done synthesizing module 'dff' (4#1) [C:/Projects/FPGA-Systems/PUF/src/xHdl/verilog/dff.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'arbiter_puf' (5#1) [C:/Projects/FPGA-Systems/PUF/src/xHdl/verilog/arbiter_puf.v:5]
-WARNING: [Synth 8-3331] design delay_line has unconnected port ichallenge[5]
-WARNING: [Synth 8-3331] design delay_line has unconnected port ichallenge[4]
-WARNING: [Synth 8-3331] design delay_line has unconnected port ichallenge[3]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [/home/bsibgatullin/Vivado_and_Vitis/Vivado_real/Vivado/2022.2/scripts/rt/data/unisim_comp.v:38708]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (0#1) [/home/bsibgatullin/study/PUF/src/xHdl/verilog/dff.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'arbiter_puf' (0#1) [/home/bsibgatullin/study/PUF/src/xHdl/verilog/arbiter_puf.v:3]
+WARNING: [Synth 8-7129] Port ichallenge[5] in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ichallenge[4] in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ichallenge[3] in module delay_line is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 511.453 ; gain = 215.117
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2016.359 ; gain = 437.770 ; free physical = 9677 ; free virtual = 53483
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1362.773; parent = 1157.495; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3015.715; parent = 2016.363; children = 999.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 511.453 ; gain = 215.117
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2031.203 ; gain = 452.613 ; free physical = 9676 ; free virtual = 53481
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1362.773; parent = 1157.495; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3030.559; parent = 2031.207; children = 999.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2031.203 ; gain = 452.613 ; free physical = 9676 ; free virtual = 53481
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1362.773; parent = 1157.495; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3030.559; parent = 2031.207; children = 999.352
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2037.141 ; gain = 0.000 ; free physical = 9668 ; free virtual = 53473
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/bsibgatullin/study/PUF/prj/Vivado/PUF/PUF.srcs/constrs_1/new/pinout.xdc]
+Finished Parsing XDC File [/home/bsibgatullin/study/PUF/prj/Vivado/PUF/PUF.srcs/constrs_1/new/pinout.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/bsibgatullin/study/PUF/prj/Vivado/PUF/PUF.srcs/constrs_1/new/pinout.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/arbiter_puf_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/arbiter_puf_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2148.953 ; gain = 0.000 ; free physical = 9582 ; free virtual = 53387
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2148.953 ; gain = 0.000 ; free physical = 9582 ; free virtual = 53387
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/bsibgatullin/Vivado_and_Vitis/Vivado_real/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2148.953 ; gain = 570.363 ; free physical = 9642 ; free virtual = 53447
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1362.773; parent = 1157.495; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3116.293; parent = 2116.941; children = 999.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 511.453 ; gain = 215.117
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2148.953 ; gain = 570.363 ; free physical = 9641 ; free virtual = 53447
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1362.773; parent = 1157.495; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3116.293; parent = 2116.941; children = 999.352
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 511.453 ; gain = 215.117
+Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
-No constraint files found.
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2148.953 ; gain = 570.363 ; free physical = 9641 ; free virtual = 53447
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1362.773; parent = 1157.495; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3116.293; parent = 2116.941; children = 999.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2148.953 ; gain = 570.363 ; free physical = 9635 ; free virtual = 53441
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1362.773; parent = 1157.495; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3116.293; parent = 2116.941; children = 999.352
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input      1 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Hierarchical Component Statistics 
----------------------------------------------------------------------------------
-Hierarchical RTL Component report 
-Module mux 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
----------------------------------------------------------------------------------
-Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Part Resource Summary
@@ -92,48 +121,42 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3331] design delay_line has unconnected port ichallenge[5]
-WARNING: [Synth 8-3331] design delay_line has unconnected port ichallenge[4]
-WARNING: [Synth 8-3331] design delay_line has unconnected port ichallenge[3]
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port ichallenge[5] in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ichallenge[4] in module delay_line is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ichallenge[3] in module delay_line is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 673.078 ; gain = 376.742
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2148.953 ; gain = 570.363 ; free physical = 9615 ; free virtual = 53425
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1362.773; parent = 1157.495; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3116.293; parent = 2116.941; children = 999.352
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
-No constraint files found.
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2148.953 ; gain = 570.363 ; free physical = 9510 ; free virtual = 53321
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1456.453; parent = 1251.217; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3116.293; parent = 2116.941; children = 999.352
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 676.000 ; gain = 379.664
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2148.953 ; gain = 570.363 ; free physical = 9510 ; free virtual = 53321
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1456.590; parent = 1251.354; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3116.293; parent = 2116.941; children = 999.352
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 676.000 ; gain = 379.664
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2148.953 ; gain = 570.363 ; free physical = 9500 ; free virtual = 53311
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1457.082; parent = 1251.846; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3116.293; parent = 2116.941; children = 999.352
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -143,34 +166,27 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Projects/FPGA-Systems/PUF/src/xHdl/verilog/dff.v:25]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/bsibgatullin/study/PUF/src/xHdl/verilog/dff.v:25]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 676.000 ; gain = 379.664
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2148.953 ; gain = 570.363 ; free physical = 9496 ; free virtual = 53306
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1457.238; parent = 1252.002; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3116.293; parent = 2116.941; children = 999.352
 ---------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 676.000 ; gain = 379.664
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2148.953 ; gain = 570.363 ; free physical = 9496 ; free virtual = 53306
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1457.254; parent = 1252.018; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3116.293; parent = 2116.941; children = 999.352
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 676.000 ; gain = 379.664
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2148.953 ; gain = 570.363 ; free physical = 9496 ; free virtual = 53306
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1457.270; parent = 1252.033; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3116.293; parent = 2116.941; children = 999.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -192,41 +208,27 @@ Report Cell Usage:
 |4     |IBUF |     4|
 |5     |OBUF |     1|
 +------+-----+------+
-
-Report Instance Areas: 
-+------+----------------------------+-----------+------+
-|      |Instance                    |Module     |Cells |
-+------+----------------------------+-----------+------+
-|1     |top                         |           |    13|
-|2     |  inst_delay_line           |delay_line |     7|
-|3     |    \genblk1[1].inst_mux_1  |mux__1     |     1|
-|4     |    \genblk1[1].inst_mux_2  |mux__2     |     1|
-|5     |    \genblk1[2].inst_mux_1  |mux__3     |     1|
-|6     |    \genblk1[2].inst_mux_2  |mux__4     |     1|
-|7     |    \genblk1[3].inst_mux_1  |mux__5     |     1|
-|8     |    \genblk1[3].inst_mux_2  |mux        |     1|
-|9     |  inst_dff                  |dff        |     1|
-+------+----------------------------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 676.000 ; gain = 379.664
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2148.953 ; gain = 570.363 ; free physical = 9496 ; free virtual = 53306
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1457.301; parent = 1252.064; children = 205.278
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3116.293; parent = 2116.941; children = 999.352
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 676.000 ; gain = 379.664
-Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 676.000 ; gain = 379.664
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2148.953 ; gain = 452.613 ; free physical = 9546 ; free virtual = 53357
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2148.953 ; gain = 570.363 ; free physical = 9547 ; free virtual = 53357
 INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2148.953 ; gain = 0.000 ; free physical = 9547 ; free virtual = 53357
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 787.965 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2148.953 ; gain = 0.000 ; free physical = 9616 ; free virtual = 53427
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
+Synth Design complete, checksum: 476a8b8a
 INFO: [Common 17-83] Releasing license: Synthesis
-18 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+25 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 787.965 ; gain = 491.629
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 787.965 ; gain = 0.000
-WARNING: [Constraints 18-5210] No constraints selected for write.
-Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Projects/FPGA-Systems/PUF/prj/Vivado/PUF/PUF.runs/synth_1/arbiter_puf.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 2148.953 ; gain = 804.676 ; free physical = 9820 ; free virtual = 53631
+INFO: [Common 17-1381] The checkpoint '/home/bsibgatullin/study/PUF/prj/Vivado/PUF/PUF.runs/synth_1/arbiter_puf.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file arbiter_puf_utilization_synth.rpt -pb arbiter_puf_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun May 14 21:24:38 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue May 16 23:00:37 2023...

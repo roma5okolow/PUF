@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../src/xHdl/verilog" \
+"../../../../../../../src/xHdl/verilog/arbiter_puf.v" \
+"../../../../../../../src/xHdl/verilog/delay_line.v" \
+"../../../../../../../src/xHdl/verilog/dff.v" \
+"../../../../../../../src/xHdl/verilog/mux.v" \
+"../../../../PUF.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

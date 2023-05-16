@@ -1,0 +1,5 @@
+set_property PACKAGE_PIN T10 [get_ports {ichallenge[1]}]
+set_property PACKAGE_PIN T9 [get_ports {ichallenge[2]}]
+set_property PACKAGE_PIN R10 [get_ports {ichallenge[0]}]
+set_property PACKAGE_PIN U13 [get_ports ipulse]
+set_property PACKAGE_PIN T13 [get_ports oresponse]

@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
-`include "parameters.vh"
-
-module delay_line(
+module delay_line #(
+    parameter C_LENGTH = 3
+    )(
     input ipulse,
     input [2 * C_LENGTH - 1 : 0] ichallenge,
     output oout_1,
