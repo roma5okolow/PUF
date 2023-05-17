@@ -5,4 +5,5 @@
 
     parameter C_DFF_TYPE = //"GENERIC"; // how to generate dff; using always@()
                            "PRIMITIVE";                    //using primitive template
+                          
 `endif

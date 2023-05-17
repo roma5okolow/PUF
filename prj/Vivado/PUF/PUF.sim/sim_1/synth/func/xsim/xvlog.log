@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bsibgatullin/study/PUF/prj/Vivado/PUF/PUF.sim/sim_1/synth/func/xsim/tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arbiter_puf
+INFO: [VRFC 10-311] analyzing module delay_line
+INFO: [VRFC 10-311] analyzing module dff
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-311] analyzing module mux__1
+INFO: [VRFC 10-311] analyzing module mux__2
+INFO: [VRFC 10-311] analyzing module mux__3
+INFO: [VRFC 10-311] analyzing module mux__4
+INFO: [VRFC 10-311] analyzing module mux__5
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bsibgatullin/study/PUF/prj/Vivado/PUF/PUF.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

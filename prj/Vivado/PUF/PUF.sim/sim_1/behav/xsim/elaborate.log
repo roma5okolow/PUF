@@ -1,0 +1,19 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/bsibgatullin/Vivado_and_Vitis/Vivado_real/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 6 for port 'ichallenge' [/home/bsibgatullin/study/PUF/src/xHdl/verilog/arbiter_puf.v:19]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.delay_line_default
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.dff_default
+Compiling module xil_defaultlib.arbiter_puf
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav

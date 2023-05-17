@@ -1,0 +1,6 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/home/bsibgatullin/study/PUF/prj/Vivado/PUF/PUF.sim/sim_1/synth/func/xsim/tb_func_synth.v,1684266766,verilog,,/home/bsibgatullin/study/PUF/prj/Vivado/PUF/PUF.srcs/sim_1/new/tb.v,,arbiter_puf;delay_line;dff;glbl;mux;mux__1;mux__2;mux__3;mux__4;mux__5,,,../../../../../../../../src/xHdl/verilog,,,,,
+/home/bsibgatullin/study/PUF/prj/Vivado/PUF/PUF.srcs/sim_1/new/tb.v,1684266621,verilog,,,,tb,,,../../../../../../../../src/xHdl/verilog,,,,,

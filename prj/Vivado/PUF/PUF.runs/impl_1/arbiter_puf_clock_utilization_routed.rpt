@@ -1,8 +1,8 @@
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun May 14 21:31:56 2023
-| Host         : DESKTOP-MN7LMCI running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue May 16 23:01:08 2023
+| Host         : bsibgatullin-ThinkPad-E14-Gen-2 running 64-bit Ubuntu 22.04.2 LTS
 | Command      : report_clock_utilization -file arbiter_puf_clock_utilization_routed.rpt
 | Design       : arbiter_puf
 | Device       : 7a35t-csg324
@@ -42,8 +42,8 @@ Table of Contents
 +-----------+-----------+-----------------+------------+------+--------------+-------------------+-------------+-----------------+--------------+-------+------------+-----+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin | Net |
 +-----------+-----------+-----------------+------------+------+--------------+-------------------+-------------+-----------------+--------------+-------+------------+-----+
-* Clock Loads column represents the clock pin loads (pin count)
-** Non-Clock Loads column represents the non-clock pin loads (pin count)
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
 
 
 3. Global Clock Source Details
@@ -52,8 +52,8 @@ Table of Contents
 +-----------+-----------+-----------------+------------+------+--------------+-------------+-----------------+---------------------+--------------+------------+-----+
 | Source Id | Global Id | Driver Type/Pin | Constraint | Site | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin | Net |
 +-----------+-----------+-----------------+------------+------+--------------+-------------+-----------------+---------------------+--------------+------------+-----+
-* Clock Loads column represents the clock pin loads (pin count)
-** Non-Clock Loads column represents the non-clock pin loads (pin count)
+* Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
+** Non-Clock Loads column represents cell count of non-clock pin loads
 
 
 4. Clock Regions: Key Resource Utilization
